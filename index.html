@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#"><img src="./image/Gold_Premium_Luxury_Hotel_Logo-removebg-preview.png" alt=""><span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Room & Suites</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Experience Luxury & Comfort at Lunar Haven</h1>
+        <p>
+          Relax in style with impeccable service, world-class amenities, and breathtaking surroundings. Book now for an unforgettable stay.
+        </p>
+        <button>Book Now</button>
+      </div>
+    </section>
+
+    <section class="promo-message">
+      <div class="marquee">
+        <span>Limited-Time Offer! Book now and enjoy up to 30% off on your stay. Experience luxury like never before!</span>
+        <span>Special Deal! Stay 3 Nights, Pay for 2! Book now and indulge in a luxurious escape!</span>
+      </div>
+    </section>
+
+      <main>
+        <h1>Features</h1>
+        <div class="feature-container">
+          <div class="feature-item item-1"></div>
+          <div class="feature-item description">
+            <span>Experience Unparalleled Luxury in Our Rooms</span> – Immerse yourself in elegantly designed, cozy spaces that blend sophistication with ultimate comfort, offering a serene retreat tailored to your relaxation and enjoyment. Each room is meticulously curated with plush furnishings, soft lighting, and modern amenities to create a warm and inviting atmosphere. Wake up refreshed and rejuvenated, ready to embrace every moment of your stay.
+            <a href="#">For More Info</a>
+          </div>
+      
+          <div class="feature-item item-2"></div>
+          <div class="feature-item description">
+            <span>Sophisticated Modern Bathrooms</span> – Designed with cleanliness and spaciousness in mind, our bathrooms feature sleek aesthetics, high-end fixtures, and premium toiletries, ensuring a refreshing and indulgent experience. Step into a private oasis where relaxation meets sophistication.
+            <a href="#">For More Info</a>
+          </div>
+      
+          <div class="feature-item item-3"></div>
+          <div class="feature-item description">
+            <span>Tranquil and Refreshing Swimming Pool</span> – Immerse yourself in crystal-clear waters and unwind in our scenic pool area, surrounded by serene landscapes and comfortable lounging spaces for the ultimate relaxation experience.
+            <a href="#">For More Info</a>
+          </div>
+      
+          <div class="feature-item item-4"></div>
+          <div class="feature-item description">
+            <span>Exquisite Fine Dining Experience</span> – Savor a culinary journey with gourmet meals meticulously crafted by top chefs, featuring the finest ingredients, elegant presentations, and a refined ambiance for an unforgettable dining experience.
+            <a href="#">For More Info</a>
+          </div>
+      
+          <div class="feature-item item-5"></div>
+          <div class="feature-item description">
+            <span>Serene and Inviting Lounge Areas</span> – Unwind in our thoughtfully designed lounge spaces, offering plush seating, warm ambiance, and a tranquil atmosphere where you can relax, socialize, or simply enjoy a moment of peace.
+            <a href="#">For More Info</a>
+          </div>
+        </div>
+      </main>
+
+    <section class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Standard Room</div>
+        <div class="plan-price">$99/night</div>
+        <ul class="plan-features">
+          <li>✅ Queen Bed</li>
+          <li>✅ Free Wi-Fi</li>
+          <li>✅ Room Service</li>
+        </ul>
+        <button class="plan-button">Book Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Deluxe Room</div>
+        <div class="plan-price">$149/night</div>
+        <ul class="plan-features">
+          <li>✅ King Bed</li>
+          <li>✅ Free Wi-Fi & Breakfast</li>
+          <li>✅ Room Service</li>
+        </ul>
+        <button class="plan-button">Book Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Suite</div>
+        <div class="plan-price">$299/night</div>
+        <ul class="plan-features">
+          <li>✅ King Bed & Living Area</li>
+          <li>✅ Free Wi-Fi, Breakfast & Minibar</li>
+          <li>✅ 24/7 Room Service</li>
+        </ul>
+        <button class="plan-button">Book Now</button>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>Privacy Policy</li>
+        <li>FAQs</li>
+        <li>Terms and Conditions</li>
+      </ul>
+
+      <p>&copy; 2025 Lunar Haven - Rommel Sevilla. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
